@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 import Input from "../../ui/Input";
 import Form from "../../ui/Form";
-import Button from "../../ui/Button";
+import ButtonOrigin from "../../ui/ButtonOrigin.jsx";
 import FileInput from "../../ui/FileInput";
 import Textarea from "../../ui/Textarea";
 
@@ -77,10 +77,10 @@ function CreateCabinForm() {
 
       <FormRow>
         {/* type is an HTML attribute! */}
-        <Button variation="secondary" type="reset">
+        <ButtonOrigin variation="secondary" type="reset">
           Cancel
-        </Button>
-        <Button>Edit cabin</Button>
+        </ButtonOrigin>
+        <ButtonOrigin>Edit cabin</ButtonOrigin>
       </FormRow>
     </Form>
   );

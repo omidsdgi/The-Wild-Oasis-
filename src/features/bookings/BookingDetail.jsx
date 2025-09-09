@@ -5,7 +5,7 @@ import Row from "../../ui/Row";
 import Heading from "../../ui/Heading";
 import Tag from "../../ui/Tag";
 import ButtonGroup from "../../ui/ButtonGroup";
-import Button from "../../ui/Button";
+import ButtonOrigin from "../../ui/ButtonOrigin.jsx";
 import ButtonText from "../../ui/ButtonText";
 
 import { useMoveBack } from "../../hooks/useMoveBack";
@@ -41,9 +41,9 @@ function BookingDetail() {
       <BookingDataBox booking={booking} />
 
       <ButtonGroup>
-        <Button variation="secondary" onClick={moveBack}>
+        <ButtonOrigin variation="secondary" onClick={moveBack}>
           Back
-        </Button>
+        </ButtonOrigin>
       </ButtonGroup>
     </>
   );

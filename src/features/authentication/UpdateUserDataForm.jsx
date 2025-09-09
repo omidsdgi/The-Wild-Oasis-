@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import Button from "../../ui/Button";
+import ButtonOrigin from "../../ui/ButtonOrigin.jsx";
 import FileInput from "../../ui/FileInput";
 import Form from "../../ui/Form";
 import FormRow from "../../ui/FormRow";
@@ -45,10 +45,10 @@ function UpdateUserDataForm() {
         />
       </FormRow>
       <FormRow>
-        <Button type="reset" variation="secondary">
+        <ButtonOrigin type="reset" variation="secondary">
           Cancel
-        </Button>
-        <Button>Update account</Button>
+        </ButtonOrigin>
+        <ButtonOrigin>Update account</ButtonOrigin>
       </FormRow>
     </Form>
   );

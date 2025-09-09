@@ -1,4 +1,4 @@
-import Button from "../../ui/Button";
+import ButtonOrigin from "../../ui/ButtonOrigin.jsx";
 import Form from "../../ui/Form";
 import FormRow from "../../ui/FormRow";
 import Input from "../../ui/Input";
@@ -26,10 +26,10 @@ function SignupForm() {
 
       <FormRow>
         {/* type is an HTML attribute! */}
-        <Button variation="secondary" type="reset">
+        <ButtonOrigin variation="secondary" type="reset">
           Cancel
-        </Button>
-        <Button>Create new user</Button>
+        </ButtonOrigin>
+        <ButtonOrigin>Create new user</ButtonOrigin>
       </FormRow>
     </Form>
   );
