@@ -1,41 +1,33 @@
+import {BrowserRouter, Navigate, Route, Routes} from "react-router-dom";
+import Dashboard from "./pages/Dashboard.jsx";
+import Bookings from "./pages/Bookings.jsx";
+import Cabins from "./pages/Cabins.jsx";
+import Users from "./pages/Users.jsx";
+import Settings from "./pages/Settings.jsx";
+import Account from "./pages/Account.jsx";
+import Login from "./pages/Login.jsx";
+import PageNotFound from "./pages/PageNotFound.jsx";
 import GlobalStyles from "./styles/GlobalStyles.js";
-import Input from "./ui/Input.jsx";
-import Button from "./ui/Button.jsx";
-import styled from "styled-components";
-import Heading from "./ui/Heading.jsx";
-import Row from "./ui/Row.jsx";
 
-const StyledApp = styled.main`
-    //background-color: orangered;
-    padding: 20px;
-`
 
 function App() {
     return (
         <>
         <GlobalStyles/>
-        <StyledApp>
-            <Row>
-
-                <Row type="horizontal">
-                    <Heading as='h1'>The wild Oasis</Heading>
-                    <div>
-                        <Heading as='h2'>Check in and out</Heading>
-                        <Button>Check in</Button>
-                        <Button variation="secondary" size="small">Check out</Button>
-                    </div>
-                </Row>
-
-                <Row type="vertical" >
-                    <Heading as='h3'>Form</Heading>
-                    <form>
-                        <Input placeholder="Number of guests" />
-                        <Input placeholder="Number of guests" />
-                    </form>
-                </Row>
-        </Row>
-        </StyledApp>
-</>
-)
+        <BrowserRouter>
+            <Routes>
+                <Route index element={<Navigate replace to="/dashboard" />} />
+                <Route path="dashboard" element={<Dashboard/>} />
+                <Route path="booking" element={<Bookings />} />
+                <Route path="cabins" element={<Cabins />} />
+                <Route path="users" element={<Users />} />
+                <Route path="settings" element={<Settings />} />
+                <Route path="account/:id" element={<Account />} />
+                <Route path="login" element={<Login />} />
+                <Route path="*" element={<PageNotFound />} />
+            </Routes>
+        </BrowserRouter>
+        </>
+    )
 }
 export default App
