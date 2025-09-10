@@ -1,5 +1,5 @@
 import { useForm } from "react-hook-form";
-import ButtonOrigin from "../../ui/ButtonOrigin.jsx";
+import Button from "../../ui/Button.jsx";
 import Form from "../../ui/Form";
 import FormRow from "../../ui/FormRow";
 import Input from "../../ui/Input";
@@ -54,10 +54,10 @@ function UpdatePasswordForm() {
         />
       </FormRow>
       <FormRow>
-        <ButtonOrigin onClick={reset} type="reset" variation="secondary">
+        <Button onClick={reset} type="reset" variation="secondary">
           Cancel
-        </ButtonOrigin>
-        <ButtonOrigin disabled={isUpdating}>Update password</ButtonOrigin>
+        </Button>
+        <Button disabled={isUpdating}>Update password</Button>
       </FormRow>
     </Form>
   );

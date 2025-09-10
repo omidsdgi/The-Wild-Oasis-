@@ -1,5 +1,5 @@
 import { useState } from "react";
-import ButtonOrigin from "../../ui/ButtonOrigin.jsx";
+import Button from "../../ui/Button.jsx";
 import Form from "../../ui/Form";
 import Input from "../../ui/Input";
 import FormRowVertical from "../../ui/FormRowVertical";
@@ -32,7 +32,7 @@ function LoginForm() {
         />
       </FormRowVertical>
       <FormRowVertical>
-        <ButtonOrigin size="large">Login</ButtonOrigin>
+        <Button size="large">Login</Button>
       </FormRowVertical>
     </Form>
   );

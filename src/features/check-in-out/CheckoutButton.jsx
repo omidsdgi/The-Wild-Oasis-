@@ -1,10 +1,10 @@
-import ButtonOrigin from "../../ui/ButtonOrigin.jsx";
+import Button from "../../ui/Button.jsx";
 
 function CheckoutButton({ bookingId }) {
   return (
-    <ButtonOrigin variation="primary" size="small">
+    <Button variation="primary" size="small">
       Check out
-    </ButtonOrigin>
+    </Button>
   );
 }
 

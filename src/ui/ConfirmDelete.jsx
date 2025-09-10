@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import ButtonOrigin from "./ButtonOrigin.jsx";
+import Button from "./Button.jsx";
 import Heading from "./Heading";
 
 const StyledConfirmDelete = styled.div`
@@ -30,12 +30,12 @@ function ConfirmDelete({ resourceName, onConfirm, disabled }) {
       </p>
 
       <div>
-        <ButtonOrigin variation="secondary" disabled={disabled}>
+        <Button variation="secondary" disabled={disabled}>
           Cancel
-        </ButtonOrigin>
-        <ButtonOrigin variation="danger" disabled={disabled}>
+        </Button>
+        <Button variation="danger" disabled={disabled}>
           Delete
-        </ButtonOrigin>
+        </Button>
       </div>
     </StyledConfirmDelete>
   );

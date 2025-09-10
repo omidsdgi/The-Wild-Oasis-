@@ -4,7 +4,7 @@ import BookingDataBox from "../../features/bookings/BookingDataBox";
 import Row from "../../ui/Row";
 import Heading from "../../ui/Heading";
 import ButtonGroup from "../../ui/ButtonGroup";
-import ButtonOrigin from "../../ui/ButtonOrigin.jsx";
+import Button from "../../ui/Button.jsx";
 import ButtonText from "../../ui/ButtonText";
 
 import { useMoveBack } from "../../hooks/useMoveBack";
@@ -43,10 +43,10 @@ function CheckinBooking() {
       <BookingDataBox booking={booking} />
 
       <ButtonGroup>
-        <ButtonOrigin onClick={handleCheckin}>Check in booking #{bookingId}</ButtonOrigin>
-        <ButtonOrigin variation="secondary" onClick={moveBack}>
+        <Button onClick={handleCheckin}>Check in booking #{bookingId}</Button>
+        <Button variation="secondary" onClick={moveBack}>
           Back
-        </ButtonOrigin>
+        </Button>
       </ButtonGroup>
     </>
   );
