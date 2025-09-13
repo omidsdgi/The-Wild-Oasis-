@@ -12,7 +12,6 @@ function Cabins() {
       <p>Filter / Sort</p>
     </Row>
 <Row>
-    <p>Mehraneh</p>
     <CabinTable/>
 </Row>
       </>
