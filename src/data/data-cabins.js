@@ -26,7 +26,7 @@ export const cabins = [
     maxCapacity: 4,
     regularPrice: 300,
     discount: 0,
-    image: imageUrl + "cabin-003.jpg",
+    image: imageUrl + "cabin-003.png",
     description:
       "Experience luxury family living in our medium-sized wooden cabin 003. Perfect for families of up to 4 people, this cabin offers a comfortable and inviting space with all modern amenities. Inside, you will find warm and inviting interiors crafted from high-quality wood, a comfortable living area, a fireplace, and a fully-equipped kitchen. The bedrooms feature plush beds and spa-like bathrooms. The cabin has a private deck with a hot tub and outdoor seating area, perfect for taking in the natural surroundings.",
   },
@@ -35,7 +35,7 @@ export const cabins = [
     maxCapacity: 4,
     regularPrice: 500,
     discount: 50,
-    image: imageUrl + "cabin-004.jpg",
+    image: imageUrl + "cabin-004.png",
     description:
       "Indulge in the ultimate luxury family vacation in this medium-sized cabin 004. Designed for families of up to 4, this cabin offers a sumptuous retreat for the discerning traveler. Inside, the cabin boasts of opulent interiors crafted from the finest quality wood, a comfortable living area, a fireplace, and a fully-equipped gourmet kitchen. The bedrooms are adorned with plush beds and spa-inspired en-suite bathrooms. Step outside to your private deck and soak in the natural surroundings while relaxing in your own hot tub.",
   },
@@ -44,7 +44,7 @@ export const cabins = [
     maxCapacity: 6,
     regularPrice: 350,
     discount: 0,
-    image: imageUrl + "cabin-005.jpg",
+    image: imageUrl + "cabin-015.jpg",
     description:
       "Enjoy a comfortable and cozy getaway with your group or family in our spacious cabin 005. Designed to accommodate up to 6 people, this cabin offers a secluded retreat in the heart of nature. Inside, the cabin features warm and inviting interiors crafted from quality wood, a living area with fireplace, and a fully-equipped kitchen. The bedrooms are comfortable and equipped with en-suite bathrooms. Step outside to your private deck and take in the natural surroundings while relaxing in your own hot tub.",
   },
