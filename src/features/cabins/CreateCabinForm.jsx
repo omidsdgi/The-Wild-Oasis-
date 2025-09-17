@@ -10,6 +10,7 @@ import FormRow from "../../ui/FormRow.jsx";
 
 import {useForm} from "react-hook-form";
 import {createEditCabin} from "../../services/apiCabins.js";
+import {useCreateCabin} from "./UseCreateCabin.js";
 
 function CreateCabinForm({cabinToEdit={}}) {
     const{id:editId, ...editValues}=cabinToEdit;
@@ -19,25 +20,16 @@ function CreateCabinForm({cabinToEdit={}}) {
         defaultValues:isEditSession ? editValues : {}});
 
     const {errors}=formState;
-    const queryClient = useQueryClient();
 
-    const {mutate:createCabin,isLoading:isCreating}=useMutation({
-        mutationFn:createEditCabin,
-        onSuccess:()=>{
-            toast.success("new cabin successfully Created")
-            queryClient.invalidateQueries({
-                queryKey:["cabins"]
-            })
-            reset()
-        },
-        onError:(error)=>toast.error(error.message),
-    })
+    const {isCreating,createCabin}=useCreateCabin();
 
+const queryClient = useQueryClient();
 
     const {mutate:editCabin,isLoading:isEditing}=useMutation({
         mutationFn:({newCabinData,id})=>createEditCabin(newCabinData,id),
         onSuccess:()=>{
             toast.success("cabin successfully edited")
+
             queryClient.invalidateQueries({
                 queryKey:["cabins"]
             })
@@ -52,8 +44,17 @@ function CreateCabinForm({cabinToEdit={}}) {
         const image=typeof data.image=== "string"?data.image:data.image[0];
 
         if(isEditSession)
-        editCabin({newCabinData:{...data,image},id:editId})
-        else createCabin({...data,image:image})
+        editCabin({newCabinData:{...data,image},id:editId},{
+            onSuccess:(data)=>{
+                reset()
+            }
+        })
+        else
+            createCabin({...data,image:image}, {
+            onSuccess:(data)=>{
+                reset()
+            }
+        })
     }
     function onError(error) {
         console.log(error)

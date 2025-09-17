@@ -1,10 +1,9 @@
 /* eslint-disable react/prop-types */
 import styled from "styled-components";
-import {useState} from "react";
-
-import CreateCabinForm from "./CreateCabinForm.jsx";
-
 import {formatCurrency} from "../../utils/helpers.js";
+
+import {useState} from "react";
+import CreateCabinForm from "./CreateCabinForm.jsx";
 import {useDeleteCabin} from "./useDeleteCabin.js";
 
 const TableRow = styled.div`
