@@ -1,5 +1,4 @@
-import {useMutation, useQueryClient} from "@tanstack/react-query";
-import toast from "react-hot-toast";
+import {useForm} from "react-hook-form";
 
 import Input from "../../ui/Input";
 import Form from "../../ui/Form";
@@ -8,11 +7,14 @@ import FileInput from "../../ui/FileInput";
 import Textarea from "../../ui/Textarea";
 import FormRow from "../../ui/FormRow.jsx";
 
-import {useForm} from "react-hook-form";
-import {createEditCabin} from "../../services/apiCabins.js";
 import {useCreateCabin} from "./UseCreateCabin.js";
+import {useEditCabin} from "./UseEditCabin.js";
 
 function CreateCabinForm({cabinToEdit={}}) {
+    const {isCreating,createCabin}=useCreateCabin();
+    const {editCabin,isEditing}=useEditCabin();
+    const isWorking= isEditing || isCreating;
+    
     const{id:editId, ...editValues}=cabinToEdit;
     const isEditSession=Boolean(editId);
 
@@ -21,40 +23,26 @@ function CreateCabinForm({cabinToEdit={}}) {
 
     const {errors}=formState;
 
-    const {isCreating,createCabin}=useCreateCabin();
 
-const queryClient = useQueryClient();
 
-    const {mutate:editCabin,isLoading:isEditing}=useMutation({
-        mutationFn:({newCabinData,id})=>createEditCabin(newCabinData,id),
-        onSuccess:()=>{
-            toast.success("cabin successfully edited")
 
-            queryClient.invalidateQueries({
-                queryKey:["cabins"]
-            })
-            reset()
-        },
-        onError:(error)=>toast.error(error.message),
-    })
 
-    const isWorking= isEditing || isCreating;
 
     function onSubmit(data){
         const image=typeof data.image=== "string"?data.image:data.image[0];
 
         if(isEditSession)
-        editCabin({newCabinData:{...data,image},id:editId},{
-            onSuccess:(data)=>{
-                reset()
-            }
-        })
+            editCabin({newCabinData:{...data,image},id:editId},{
+                onSuccess:(data)=>{
+                    reset()
+                }
+            })
         else
             createCabin({...data,image:image}, {
-            onSuccess:(data)=>{
-                reset()
-            }
-        })
+                onSuccess:(data)=>{
+                    reset()
+                }
+            })
     }
     function onError(error) {
         console.log(error)
