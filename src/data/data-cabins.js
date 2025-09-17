@@ -8,7 +8,7 @@ export const cabins = [
     maxCapacity: 2,
     regularPrice: 250,
     discount: 0,
-    image: imageUrl + "cabin-001.jpg",
+    image: imageUrl + "cabin-001.png",
     description:
       "Discover the ultimate luxury getaway for couples in the cozy wooden cabin 001. Nestled in a picturesque forest, this stunning cabin offers a secluded and intimate retreat. Inside, enjoy modern high-quality wood interiors, a comfortable seating area, a fireplace and a fully-equipped kitchen. The plush king-size bed, dressed in fine linens guarantees a peaceful nights sleep. Relax in the spa-like shower and unwind on the private deck with hot tub.",
   },
@@ -53,7 +53,7 @@ export const cabins = [
     maxCapacity: 6,
     regularPrice: 800,
     discount: 100,
-    image: imageUrl + "cabin-006.jpg",
+    image: imageUrl + "cabin-006.png",
     description:
       "Experience the epitome of luxury with your group or family in our spacious wooden cabin 006. Designed to comfortably accommodate up to 6 people, this cabin offers a lavish retreat in the heart of nature. Inside, the cabin features opulent interiors crafted from premium wood, a grand living area with fireplace, and a fully-equipped gourmet kitchen. The bedrooms are adorned with plush beds and spa-like en-suite bathrooms. Step outside to your private deck and soak in the natural surroundings while relaxing in your own hot tub.",
   },
@@ -62,7 +62,7 @@ export const cabins = [
     maxCapacity: 8,
     regularPrice: 600,
     discount: 100,
-    image: imageUrl + "cabin-007.jpg",
+    image: imageUrl + "cabin-007.png",
     description:
       "Accommodate your large group or multiple families in the spacious and grand wooden cabin 007. Designed to comfortably fit up to 8 people, this cabin offers a secluded retreat in the heart of beautiful forests and mountains. Inside, the cabin features warm and inviting interiors crafted from quality wood, multiple living areas with fireplace, and a fully-equipped kitchen. The bedrooms are comfortable and equipped with en-suite bathrooms. The cabin has a private deck with a hot tub and outdoor seating area, perfect for taking in the natural surroundings.",
   },
@@ -71,7 +71,7 @@ export const cabins = [
     maxCapacity: 10,
     regularPrice: 1400,
     discount: 0,
-    image: imageUrl + "cabin-008.jpg",
+    image: imageUrl + "cabin-008.png",
     description:
       "Experience the epitome of luxury and grandeur with your large group or multiple families in our grand cabin 008. This cabin offers a lavish retreat that caters to all your needs and desires. The cabin features an opulent design and boasts of high-end finishes, intricate details and the finest quality wood throughout. Inside, the cabin features multiple grand living areas with fireplaces, a formal dining area, and a gourmet kitchen that is a chef's dream. The bedrooms are designed for ultimate comfort and luxury, with plush beds and en-suite spa-inspired bathrooms. Step outside and immerse yourself in the beauty of nature from your private deck, featuring a luxurious hot tub and ample seating areas for ultimate relaxation and enjoyment.",
   },

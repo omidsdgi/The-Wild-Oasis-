@@ -33,7 +33,6 @@ function CabinTable() {
         queryFn: getCabins
     });
 
-
     if (isLoading) return <Spinner />;
 
     if (error) {
@@ -42,7 +41,7 @@ function CabinTable() {
 
     return (
         <>
-                    <Table role='table'>
+            <Table role='table'>
                 <TableHeader role='row'>
                     <div></div>
                     <div>Cabin</div>
@@ -52,10 +51,10 @@ function CabinTable() {
                     <div></div>
                 </TableHeader>
                 { cabins.length > 0 && (
-                            cabins.map((cabin) =>(
-                                <CabinRow key={cabin.id } cabin={cabin}
-                                />)
-                            ))}
+                    cabins.map((cabin) =>(
+                        <CabinRow key={cabin.id } cabin={cabin}
+                        />)
+                    ))}
             </Table>
         </>
     );
