@@ -12,11 +12,14 @@ export async function getCabins() {
 }
 
 export async function createEditCabin(newCabin, id) {
-  const hasImagePath = typeof newCabin.image === "string" && newCabin.image.startsWith(supabaseUrl);
+  const hasImagePath =
+      typeof newCabin.image === "string" &&
+      newCabin.image.startsWith(supabaseUrl);
 
+  // اگه فایل جدید هست یک اسم یونیک بساز
   const imageName = hasImagePath
       ? newCabin.image.split("/").pop()
-      : newCabin.image.name;
+      : `${Math.random().toString(36).slice(2)}-${newCabin.image.name}`;
 
   const imagePath = hasImagePath
       ? newCabin.image
@@ -35,7 +38,8 @@ export async function createEditCabin(newCabin, id) {
   }
 
   // فقط وقتی فایل جدید هست آپلود کن
-  if (!hasImagePath) {
+  if (hasImagePath) return data
+
     const { error: storageError } = await supabase.storage
         .from("cabin-images")
         .upload(imageName, newCabin.image, { upsert: true });
@@ -44,10 +48,10 @@ export async function createEditCabin(newCabin, id) {
       await supabase.from("cabins").delete().eq("id", data.id);
       throw new Error("Cabin image could not be uploaded");
     }
-  }
 
   return data;
 }
+
 
 
 
