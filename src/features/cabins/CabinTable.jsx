@@ -3,14 +3,15 @@ import styled from "styled-components";
 import Spinner from "../../ui/Spinner.jsx";
 import CabinRow from "./CabinRow.jsx";
 import {useCabins} from "./UseCabins.js";
+import Table from "../../ui/Table.jsx";
 
-const Table = styled.div`
-    border: 1px solid var(--color-grey-200);
-    font-size: 1.4rem;
-    background-color: var(--color-grey-0);
-    border-radius: 7px;
-    overflow: hidden;
-`;
+// const Table = styled.div`
+//     border: 1px solid var(--color-grey-200);
+//     font-size: 1.4rem;
+//     background-color: var(--color-grey-0);
+//     border-radius: 7px;
+//     overflow: hidden;
+// `;
 
 const TableHeader = styled.header`
     display: grid;
@@ -38,24 +39,36 @@ function CabinTable() {
     }
 
     return (
-        <>
-            <Table role='table'>
-                <TableHeader role='row'>
-                    <div></div>
-                    <div>Cabin</div>
-                    <div>Capacity</div>
-                    <div>Price</div>
-                    <div>Discount</div>
-                    <div></div>
-                </TableHeader>
-                { cabins.length > 0 && (
-                    cabins.map((cabin) =>(
-                        <CabinRow key={cabin.id } cabin={cabin}
-                        />)
-                    ))}
-            </Table>
-        </>
+        <Table columns=" 0.6fr 1.8fr 2.2fr 1fr 1fr 1fr" >
+            <Table.Header>
+                <div></div>
+                <div>Cabin</div>
+                <div>Capacity</div>
+                <div>Price</div>
+                <div>Discount</div>
+                <div></div>
+            </Table.Header>
+            { cabins.map((cabin) =>(
+                    <CabinRow key={cabin.id } cabin={cabin}/>
+                ))}
+        </Table>
     );
 }
 
 export default CabinTable;
+
+// <Table role='table'>
+//     <TableHeader role='row'>
+//         <div></div>
+//         <div>Cabin</div>
+//         <div>Capacity</div>
+//         <div>Price</div>
+//         <div>Discount</div>
+//         <div></div>
+//     </TableHeader>
+//     { cabins.length > 0 && (
+//         cabins.map((cabin) =>(
+//             <CabinRow key={cabin.id } cabin={cabin}
+//             />)
+//         ))}
+// </Table>
