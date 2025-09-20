@@ -85,8 +85,16 @@ function Row({children}) {
         </StyledRow>
     )
 }
+function Body({data,render}) {
+    if (!data) return <Empty>There is no data to show it.</Empty>;
+    return(
+        <StyledBody >{data.map(render)}  
 
+        </StyledBody>
+    )
+}
 Table.Header = Header;
 Table.Row = Row;
+Table.Body=Body
 
 export default Table;
