@@ -10,6 +10,7 @@ import {useCreateCabin} from "./UseCreateCabin.js";
 import Modal from "../../ui/Modal.jsx";
 import ConfirmDelete from "../../ui/ConfirmDelete.jsx";
 import Table from "../../ui/Table.jsx";
+import Menus from "../../ui/Menus.jsx";
 
 // const TableRow = styled.div`
 //     display: grid;
@@ -89,6 +90,16 @@ function CabinRow({cabin}){
                         />
                     </Modal.Window>
                 </Modal>
+
+                <Menus.Menu>
+                    <Menus.Toggle id={cabinId}/>
+
+                    <Menus.List id={cabinId}>
+                        <Menus.Button>Duplicate</Menus.Button>
+                        <Menus.Button>Edit</Menus.Button>
+                        <Menus.Button>Delete</Menus.Button>
+                    </Menus.List>
+                </Menus.Menu>
             </div>
         </Table.Row>
     )
