@@ -2,6 +2,7 @@ import styled from "styled-components";
 import {createContext, useContext, useState} from "react";
 import {HiEllipsisVertical} from "react-icons/hi2";
 import {createPortal} from "react-dom";
+import {useOutsideClick} from "../hooks/useOutsideClick.js";
 
 
 const StyledMenu = styled.div`
@@ -105,12 +106,12 @@ function Menus({children}) {
 }
 
  function List({id,children}){
-    const {openId,position} =useContext(MenusContext);
-
+    const {openId,position,close} =useContext(MenusContext);
+    const ref= useOutsideClick(close)
     if(openId !==id) return null;
 
     return createPortal (
-        <StyledList position={position}>
+        <StyledList position={position} ref={ref}>
             {children}
         </StyledList>,document.body
     )
