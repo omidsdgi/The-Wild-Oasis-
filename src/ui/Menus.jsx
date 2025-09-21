@@ -97,7 +97,6 @@ function Menus({children}) {
 
     openId ==="" || openId !== id ? open(id) : close()
     }
-     console.log(openId, id)
     return (
         <StyledToggle onClick={handleClick}>
             <HiEllipsisVertical/>
