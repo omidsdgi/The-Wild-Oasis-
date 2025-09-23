@@ -15,7 +15,7 @@ export function useBookings() {
             data,
             error
         } =useQuery({
-            queryKey:["bookings"],
+            queryKey:["bookings",filter],
             queryFn:()=>getBookings({filter}),
         })
     return {isLoading,bookings:data || [],error}
