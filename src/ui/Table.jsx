@@ -93,8 +93,17 @@ function Body({data,render}) {
         </StyledBody>
     )
 }
+
+// function Footer({children}) {
+//     return (
+//         <StyledFooter>
+//         {children}
+//         </StyledFooter>
+//     )
+// }
 Table.Header = Header;
 Table.Row = Row;
 Table.Body=Body
+Table.Footer = Footer;
 
 export default Table;
