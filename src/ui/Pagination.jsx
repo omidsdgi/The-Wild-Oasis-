@@ -77,11 +77,12 @@ function Pagination({count}) {
     setSearchParams(searchParams)
     }
 
+    if (pageCount<=1)return null
 
     return (
         <StyledPagination>
             <P>
-                Showing <span>1</span> to <span>10</span> of <span>{count}</span> result
+                Showing <span>{(currentPage-1)*PAGE_SIZE+1}</span> to <span>{currentPage === pageCount ? count : currentPage*PAGE_SIZE}</span> of <span>{count}</span> result
             </P>
             <Buttons>
                 <PaginationButton onClick={prevPage} disabled={currentPage === 1}>

@@ -32,7 +32,7 @@ if(!bookings.length) return <Empty resourceName="bookings"/>
           )}
         />
         <Table.Footer>
-          <Pagination  count={15}/>
+          <Pagination  count={50}/>
         </Table.Footer>
       </Table>
     </Menus>
