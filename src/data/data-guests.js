@@ -17,7 +17,7 @@ export const guests = [
     countryFlag: 'https://flagcdn.com/gb.svg',
   },
   {
-    fullName: 'Jonatan Johansson',
+    fullName: 'Jonathan Johansson',
     email: 'jonatan@example.com',
     nationality: 'Finland',
     nationalID: '9374074454',
