@@ -1,11 +1,14 @@
 import { getToday } from "../utils/helpers";
 import supabase from "./supabase";
 
-export async function getBookings({filter}) {
+export async function getBookings({filter,sortBy}) {
   let query=supabase.from("bookings")
       .select("id,created_at,startDate,endDate,numNights,status,totalPrice,cabins!bookings_cabinId_fkey (name),guests!bookings_guestId_fkey (fullName,email)");
 
-  if(filter !==null) query = query.eq(filter.field,filter.value);
+  if(filter) query = query[filter.method || "eq"](filter.field,filter.value);
+
+  if (sortBy) query=query.order(sortBy.field,{ascending:sortBy.direction === "asc"});
+
 
   const { data, error } = await query
 
