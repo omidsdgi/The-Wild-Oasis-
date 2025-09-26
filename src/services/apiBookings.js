@@ -109,8 +109,8 @@ export async function updateBooking(id, obj) {
       .single();
 
   if (error) {
-    console.error(error);
-    throw new Error("Booking could not be updated");
+    console.error("Supabase update error:", error);
+    throw new Error(error.message || "Booking could not be updated");
   }
   return data;
 }
