@@ -22,6 +22,7 @@ function LoginForm() {
     }
 
     return (
+
         <Form onSubmit={handleSubmit}>
             <FormRowVertical label="Email address">
                 <Input
@@ -48,6 +49,7 @@ function LoginForm() {
                 <Button size="large" disabled={isLoading}>{!isLoading ? "Log in" : <SpinnerMini/>}</Button>
             </FormRowVertical>
         </Form>
+
     );
 }
 
