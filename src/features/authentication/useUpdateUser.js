@@ -4,6 +4,7 @@ import toast from "react-hot-toast";
 
 export function useUpdateUser() {
     const queryClient=useQueryClient();
+
     const{mutate:updateUser,isLoading:isUpdating} =useMutation({
         mutationFn:updateCurrentUser,
         onSuccess:()=>{
