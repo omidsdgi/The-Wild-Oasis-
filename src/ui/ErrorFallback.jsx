@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Heading from "./Heading.jsx";
 
 const StyledErrorFallback = styled.main`
   height: 100vh;
@@ -24,8 +25,21 @@ const Box = styled.div`
   }
 
   & p {
-    font-family: "Sono";
+    font-family: "Sono",sans-serif;
     margin-bottom: 3.2rem;
     color: var(--color-grey-500);
   }
 `;
+
+function ErrorFallback() {
+    return (
+        <StyledErrorFallback>
+            <Box>
+                <Heading as="h1"> Something went wrong 🧐 </Heading>
+            </Box>
+
+        </StyledErrorFallback>
+    );
+}
+
+export default ErrorFallback
