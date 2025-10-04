@@ -41,12 +41,12 @@ const Cabin = styled.div`
 `;
 
 const Price = styled.div`
-    font-family: "Sono";
+    font-family: "Sono",sans-serif;
     font-weight: 600;
 `;
 
 const Discount = styled.div`
-    font-family: "Sono";
+    font-family: "Sono",sans-serif;
     font-weight: 500;
     color: var(--color-green-700);
 `;
@@ -76,7 +76,9 @@ function CabinRow({cabin}){
 
                         <Menus.List id={cabinId}>
                             <Menus.Button icon={<HiSquare2Stack />}
-                                          onClick={handleDuplicate}>
+                                          onClick={handleDuplicate}
+                                          disabled={isCreating}
+                            >
                                 Duplicate
                             </Menus.Button>
 

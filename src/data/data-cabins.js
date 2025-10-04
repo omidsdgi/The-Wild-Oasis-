@@ -17,7 +17,7 @@ export const cabins = [
     maxCapacity: 2,
     regularPrice: 350,
     discount: 25,
-    image: imageUrl + "cabin-002.png",
+    image: imageUrl + "cabin-002.jpg",
     description:
       "Escape to the serenity of nature and indulge in luxury in our cozy cabin 002. Perfect for couples, this cabin offers a secluded and intimate retreat in the heart of a picturesque forest. Inside, you will find warm and inviting interiors crafted from high-quality wood, a comfortable living area, a fireplace and a fully-equipped kitchen. The luxurious bedroom features a plush king-size bed and spa-like shower. Relax on the private deck with hot tub and take in the beauty of nature.",
   },
@@ -44,7 +44,7 @@ export const cabins = [
     maxCapacity: 6,
     regularPrice: 350,
     discount: 0,
-    image: imageUrl + "cabin-015.jpg",
+    image: imageUrl + "cabin-005.jpg",
     description:
       "Enjoy a comfortable and cozy getaway with your group or family in our spacious cabin 005. Designed to accommodate up to 6 people, this cabin offers a secluded retreat in the heart of nature. Inside, the cabin features warm and inviting interiors crafted from quality wood, a living area with fireplace, and a fully-equipped kitchen. The bedrooms are comfortable and equipped with en-suite bathrooms. Step outside to your private deck and take in the natural surroundings while relaxing in your own hot tub.",
   },
