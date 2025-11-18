@@ -261,8 +261,9 @@ This project is [MIT](LICENSE) licensed.
 
 ## 🔗 Links
 
-- **Live Application**: [https://the-wild-oasis-sigma-livid.vercel.app](https://the-wild-oasis-sigma-livid.vercel.app/dashboard)
-- **Repository**: [https://github.com/omidsdgi/The-Wild-Oasis-](https://github.com/omidsdgi/The-Wild-Oasis-)
+- **Live Application:** [https://the-wild-oasis-sigma-livid.vercel.app](https://the-wild-oasis-sigma-livid.vercel.app)
+- **Repository:** [https://github.com/omidsdgi/The-Wild-Oasis-](https://github.com/omidsdgi/The-Wild-Oasis-)
+
 
 ---
 
