@@ -216,7 +216,7 @@ Contributions, issues, and feature requests are welcome!
 **Omid Sadeghi**
 
 - GitHub: [@omidsdgi](https://github.com/omidsdgi)
-- Portfolio: [https://my-portfolio-tau-flame-49.vercel.app/projectsPage]
+- Portfolio: [https://my-portfolio-tau-flame-49.vercel.app]
 - Email: [omid69sdgi@gmail.com]
 
 ---
@@ -263,7 +263,6 @@ This project is [MIT](LICENSE) licensed.
 
 - **Live Application**: [https://the-wild-oasis-sigma-livid.vercel.app](https://the-wild-oasis-sigma-livid.vercel.app/dashboard)
 - **Repository**: [https://github.com/omidsdgi/The-Wild-Oasis-](https://github.com/omidsdgi/The-Wild-Oasis-)
-- **Issues**: [Report Bug](https://github.com/omidsdgi/The-Wild-Oasis-/issues)
 
 ---
 
