@@ -216,9 +216,8 @@ Contributions, issues, and feature requests are welcome!
 **Omid Sadeghi**
 
 - GitHub: [@omidsdgi](https://github.com/omidsdgi)
-- Portfolio: [Your Portfolio Link]
-- LinkedIn: [Your LinkedIn]
-- Email: [Your Email]
+- Portfolio: [Your Portfolio Link](https://my-portfolio-tau-flame-49.vercel.app/projectsPage)
+- Email: [your email](omid69sdgi@gmail.com)
 
 ---
 
@@ -250,8 +249,13 @@ This project is [MIT](LICENSE) licensed.
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/b077a27d-1f9c-48d1-ab84-f5762014387d" />
 
 
-### Analytics
-*[Add screenshot of analytics charts]*
+### Users Details
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/f9a78f7e-3931-4c86-a28b-7446297aca9b" />
+
+### Setting Details
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/97625313-2cc1-4a82-b5ba-179e7eb8e62a" />
+
+
 
 ---
 
