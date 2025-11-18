@@ -216,8 +216,8 @@ Contributions, issues, and feature requests are welcome!
 **Omid Sadeghi**
 
 - GitHub: [@omidsdgi](https://github.com/omidsdgi)
-- Portfolio: [Your Portfolio Link](https://my-portfolio-tau-flame-49.vercel.app/projectsPage)
-- Email: [your email](omid69sdgi@gmail.com)
+- Portfolio: [https://my-portfolio-tau-flame-49.vercel.app/projectsPage]
+- Email: [omid69sdgi@gmail.com]
 
 ---
 
