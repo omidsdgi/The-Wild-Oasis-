@@ -13,7 +13,7 @@ The Wild Oasis is a comprehensive internal hotel management system designed excl
 
 Built as an internal tool, it ensures secure access control where only authorized hotel staff can create accounts and perform operational tasks.
 
-**[🚀 View Live Demo](https://the-wild-oasis-sigma-livid.vercel.app/dashboard)**
+**
 
 ---
 
@@ -242,7 +242,8 @@ This project is [MIT](LICENSE) licensed.
 *[Add screenshot of main dashboard]*
 
 ### Cabin Management
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/50e42d9f-39ea-4a6f-a123-731e66309a4f" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/8ea92232-77d6-40a8-b4d6-98f3f38391b8" />
+
 
 
 ### Booking Details
