@@ -243,11 +243,12 @@ This project is [MIT](LICENSE) licensed.
 *[Add screenshot of main dashboard]*
 
 ### Cabin Management
-<img width="3520" height="1080" alt="image" src="https://github.com/user-attachments/assets/13f08a7e-905e-4486-8c81-854c10d0a35b" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/50e42d9f-39ea-4a6f-a123-731e66309a4f" />
 
 
 ### Booking Details
-*[Add screenshot of booking details page]*
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/b077a27d-1f9c-48d1-ab84-f5762014387d" />
+
 
 ### Analytics
 *[Add screenshot of analytics charts]*
