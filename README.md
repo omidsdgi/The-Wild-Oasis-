@@ -2,10 +2,10 @@
 
 > A modern, full-featured hotel management application built with React and Supabase
 
-[![Live Demo](https://img.shields.io/badge/demo-live-brightgreen)](https://the-wild-oasis-sigma-livid.vercel.app/dashboard)
-[![React](https://img.shields.io/badge/React-18.2-blue)](https://reactjs.org/)
-[![Vite](https://img.shields.io/badge/Vite-6.3-purple)](https://vitejs.dev/)
-[![Supabase](https://img.shields.io/badge/Supabase-Backend-green)](https://supabase.com/)
+[![Live Demo](https://img.shields.io/badge/demo-live-brightgreen?style=for-the-badge&logo=vercel)](https://the-wild-oasis-sigma-livid.vercel.app)
+[![GitHub Repo](https://img.shields.io/badge/github-repo-blue?style=for-the-badge&logo=github)](https://github.com/omidsdgi/The-Wild-Oasis-)
+[![Supabase](https://img.shields.io/badge/backend-supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)](https://supabase.com)
+
 
 ## 📋 Overview
 
