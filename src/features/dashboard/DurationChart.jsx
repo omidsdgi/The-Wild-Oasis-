@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import Heading from "../../ui/Heading.jsx";
-import {Cell, Legend, Pie, PieChart, ResponsiveContainer} from "recharts";
+import {Cell, Legend, Pie, PieChart, ResponsiveContainer, Tooltip} from "recharts";
+import {useDarkMode} from "../../context/DarkModeContext.jsx";
 
 const ChartBox = styled.div`
   /* Box */
@@ -15,7 +16,7 @@ const ChartBox = styled.div`
     margin-bottom: 1.6rem;
   }
 
-  & .recharts-pie-label-text {
+  &.recharts-pie-label-text {
     font-weight: 600;
   }
 `;
@@ -43,22 +44,22 @@ const startDataLight = [
   },
   {
     duration: "6-7 nights",
-    value: 2,
+    value: 0,
     color: "#22c55e",
   },
   {
     duration: "8-14 nights",
-    value: 3,
+    value: 0,
     color: "#14b8a6",
   },
   {
     duration: "15-21 nights",
-    value: 4,
+    value: 0,
     color: "#3b82f6",
   },
   {
     duration: "21+ nights",
-    value: 5,
+    value: 0,
     color: "#a855f7",
   },
 ];
@@ -71,17 +72,17 @@ const startDataDark = [
   },
   {
     duration: "2 nights",
-    value: 6,
+    value: 0,
     color: "#c2410c",
   },
   {
     duration: "3 nights",
-    value: 5,
+    value: 0,
     color: "#a16207",
   },
   {
     duration: "4-5 nights",
-    value: 3,
+    value: 0,
     color: "#4d7c0f",
   },
   {
@@ -133,14 +134,17 @@ function prepareData(startData, stays) {
   return data;
 }
 
-export default function DurationChart() {
+export default function DurationChart({confirmedStays}) {
+  const {isDarkMode}=useDarkMode()
+  const startData= isDarkMode ? startDataDark : startDataLight
+  const data = prepareData(startData, confirmedStays);
   return (
       <ChartBox>
       <Heading as='h2'>Stay duration summary</Heading>
-        <ResponsiveContainer>
+        <ResponsiveContainer width="100%" height={240}>
           <PieChart>
             <Pie
-                data={startDataLight}
+                data={data}
                 nameKey='duration'
                 dataKey='value'
                 innerRadius={85}
@@ -149,7 +153,7 @@ export default function DurationChart() {
                 cy='50%'
                 paddingAngle={3}
             >
-              {startDataLight.map(entry => (
+              {data.map(entry => (
                   <Cell
                   fill={entry.color}
                   stroke={entry.color}
@@ -157,6 +161,7 @@ export default function DurationChart() {
                   />
               ))}
             </Pie>
+            <Tooltip/>
             <Legend
               verticalAlign='middle'
               align='right'
