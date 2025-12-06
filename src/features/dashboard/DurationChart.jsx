@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import Heading from "../../ui/Heading.jsx";
-import {Pie, PieChart, ResponsiveContainer} from "recharts";
+import {Cell, Pie, PieChart, ResponsiveContainer} from "recharts";
 
 const ChartBox = styled.div`
   /* Box */
@@ -71,17 +71,17 @@ const startDataDark = [
   },
   {
     duration: "2 nights",
-    value: 0,
+    value: 6,
     color: "#c2410c",
   },
   {
     duration: "3 nights",
-    value: 0,
+    value: 5,
     color: "#a16207",
   },
   {
     duration: "4-5 nights",
-    value: 0,
+    value: 3,
     color: "#4d7c0f",
   },
   {
@@ -143,7 +143,20 @@ export default function DurationChart() {
                 data={startDataLight}
                 nameKey='duration'
                 dataKey='value'
-            />
+                innerRadius={85}
+                outerRadius={110}
+                cx='40%'
+                cy='50%'
+                paddingAngle={3}
+            >
+              {startDataLight.map(entry => (
+                  <Cell
+                  fill={entry.color}
+                  stroke={entry.color}
+                  key={entry.duration}
+                  />
+              ))}
+            </Pie>
           </PieChart>
         </ResponsiveContainer>
       </ChartBox>
