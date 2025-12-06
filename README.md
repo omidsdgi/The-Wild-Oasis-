@@ -239,7 +239,8 @@ This project is [MIT](LICENSE) licensed.
 ## 📸 Screenshots
 
 ### Dashboard
-*[Add screenshot of main dashboard]*
+<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/5f117766-41e1-4f31-bc99-c1f3c505094f" />
+
 
 ### Cabin Management
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/8ea92232-77d6-40a8-b4d6-98f3f38391b8" />
