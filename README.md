@@ -2,10 +2,10 @@
 
 > A modern, full-featured hotel management application built with React and Supabase
 
-[![Live Demo](https://img.shields.io/badge/demo-live-brightgreen)](https://the-wild-oasis-sigma-livid.vercel.app/dashboard)
-[![React](https://img.shields.io/badge/React-18.2-blue)](https://reactjs.org/)
-[![Vite](https://img.shields.io/badge/Vite-6.3-purple)](https://vitejs.dev/)
-[![Supabase](https://img.shields.io/badge/Supabase-Backend-green)](https://supabase.com/)
+[![Live Demo](https://img.shields.io/badge/demo-live-brightgreen?style=for-the-badge&logo=vercel)](https://the-wild-oasis-sigma-livid.vercel.app)
+[![GitHub Repo](https://img.shields.io/badge/github-repo-blue?style=for-the-badge&logo=github)](https://github.com/omidsdgi/The-Wild-Oasis-)
+[![Supabase](https://img.shields.io/badge/backend-supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)](https://supabase.com)
+
 
 ## 📋 Overview
 
@@ -13,7 +13,7 @@ The Wild Oasis is a comprehensive internal hotel management system designed excl
 
 Built as an internal tool, it ensures secure access control where only authorized hotel staff can create accounts and perform operational tasks.
 
-**[🚀 View Live Demo](https://the-wild-oasis-sigma-livid.vercel.app/dashboard)**
+**
 
 ---
 
@@ -242,7 +242,8 @@ This project is [MIT](LICENSE) licensed.
 *[Add screenshot of main dashboard]*
 
 ### Cabin Management
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/50e42d9f-39ea-4a6f-a123-731e66309a4f" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/8ea92232-77d6-40a8-b4d6-98f3f38391b8" />
+
 
 
 ### Booking Details
@@ -261,8 +262,9 @@ This project is [MIT](LICENSE) licensed.
 
 ## 🔗 Links
 
-- **Live Application**: [https://the-wild-oasis-sigma-livid.vercel.app](https://the-wild-oasis-sigma-livid.vercel.app/dashboard)
-- **Repository**: [https://github.com/omidsdgi/The-Wild-Oasis-](https://github.com/omidsdgi/The-Wild-Oasis-)
+- **Live Application:** [https://the-wild-oasis-sigma-livid.vercel.app](https://the-wild-oasis-sigma-livid.vercel.app)
+- **Repository:** [https://github.com/omidsdgi/The-Wild-Oasis-](https://github.com/omidsdgi/The-Wild-Oasis-)
+
 
 ---
 
